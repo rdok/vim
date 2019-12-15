@@ -14,11 +14,11 @@ pipeline {
          steps { 
             sh "echo ${TOKEN} | docker login -u ${USERNAME} --password-stdin"
             sh 'docker image push rdok/vim:latest'
-            sh 'docker logout'
          } 
       }
    }
    post {
+      always { sh 'docker logout' }
       failure {
          slackSend color: '#FF0000',
          message: "@here Failed: <${env.BUILD_URL}console | ${env.JOB_NAME}#${env.BUILD_NUMBER}>"

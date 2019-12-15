@@ -8,8 +8,7 @@ RUN apk update && \
       ctags \
       git
 
-WORKDIR /vim
-COPY ./.vimrc .vimrc
+COPY .vimrc /vim/.vimrc
 
 # Vundle
 RUN git clone \
@@ -17,5 +16,6 @@ RUN git clone \
    && vim -u /vim/.vimrc +PluginInstall +qal \
    && apk del git
 
+WORKDIR /app
 
 CMD ["vim", "-u", "/vim/.vimrc"]

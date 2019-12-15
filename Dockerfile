@@ -2,7 +2,10 @@ FROM alpine:3.9
 
 LABEL maintainer="Rizart Dokollari"
 
-RUN apk add --no-cache vim \
+RUN apk update && \
+    apk add --no-cache \
+      vim \
+      ctags \
       git
 
 WORKDIR /vim

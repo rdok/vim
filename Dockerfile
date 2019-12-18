@@ -8,8 +8,7 @@ RUN apk update && \
       ctags \
       git
 
-WORKDIR /root
-COPY src .
+COPY src /root/
 
 RUN git clone \
       https://github.com/VundleVim/Vundle.vim.git /root/.vim/bundle/Vundle.vim \

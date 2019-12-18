@@ -7,18 +7,18 @@ Use Vim on docker. Use case, installing vim plugins such exuberant tags regardle
 Linux 
 
 ```
-docker run --rm -it -v  $PWD:/app -e COLUMNS="`tput cols`" -e LINES="`tput lines`" rdok/vim
+docker run --rm -it -v $PWD:/app -w /app -e COLUMNS="`tput cols`" -e LINES="`tput lines`" rdok/vim
 ```
 
 Windows 
 
 ```
-docker run --rm -it -v  "/${PWD}":/app -e COLUMNS="`tput cols`" -e LINES="`tput lines`" rdok/vim
+docker run --rm -it -v  "/${PWD}":/app -w /app -e COLUMNS="`tput cols`" -e LINES="`tput lines`" rdok/vim
 ```
 
 ##### Aliases
 ```
-alias rdok-vim='docker run --rm -it -v `pwd`:/app -e COLUMNS="`tput cols`" -e LINES="`tput lines`" rdok/vim'
+alias rdok-vim='docker run --rm -it -v `pwd`:/app -w /app -e COLUMNS="`tput cols`" -e LINES="`tput lines`" rdok/vim'
 ```
 
 

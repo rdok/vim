@@ -8,6 +8,7 @@ nmap <Leader><SPACE> :nohl<cr>          " Stop the highlighting for the search
 
 " Tests
 nmap <F9> :!clear && ./phpunit %<cr>
+nnoremap <f5> :!ctags -R --exclude=.git --exclude=node_modules<CR>
 
 " NERDTree: Toggle Sidebar
 nmap <Leader>1 :NERDTreeToggle<cr>

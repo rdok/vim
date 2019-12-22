@@ -21,6 +21,13 @@ docker run --rm -it -v  "/${PWD}":/app -w /app -e COLUMNS="`tput cols`" -e LINES
 alias rdok-vim='docker run --rm -it -v `pwd`:/app -w /app -e COLUMNS="`tput cols`" -e LINES="`tput lines`" rdok/vim'
 ```
 
-
 ##### Resources
 - [Resolve Strange terminal behaviour inside docker](https://github.com/moby/moby/issues/33794#issuecomment-312873988)
+
+
+### Development
+```
+   ln -s full-path/.vimrc ~/Code/vim/src/.vimrc
+   ln -s full-path/.vim ~/Code/vim/src/.vim
+   # Install vundle
+```

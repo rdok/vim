@@ -10,7 +10,7 @@ set background=light
 
 " Display line numbers
 set number
-" set relativenumber
+set relativenumber
 
 " Remove split borders
 hi vertsplit guifg=bg guibg=bg

@@ -6,3 +6,4 @@ source ~/.vim/rc/formatting.vim
 source ~/.vim/rc/completion-menu.vim
 source ~/.vim/rc/search.vim
 source ~/.vim/rc/mappings.vim
+source ~/.vim/rc/commands.vim

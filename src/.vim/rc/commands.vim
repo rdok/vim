@@ -1,7 +1,8 @@
 function! GitAddCommitPush(message) 
-   :! git add --all 
-   :! git commit -m a:message
-   :! git push
+   :! clear
+   :! git add --all
+   execute '!git' 'commit' '-m' shellescape(a:message)
+   " execute '!git' 'push'
 endfunction
 
 command! -nargs=1 Gacp :call GitAddCommitPush(<args>)

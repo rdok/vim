@@ -28,3 +28,7 @@ endif
 set backupdir=$HOME/.vim/temp/
 set directory=$HOME/.vim/temp/
 set undodir=$HOME/.vim/temp/
+
+
+" JamshedVesuna/vim-markdown-preview
+noremap <leader>m <Plug>MarkdownPreview

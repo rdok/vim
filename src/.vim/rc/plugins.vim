@@ -15,7 +15,11 @@ call vundle#begin()
     Plugin 'ryanoasis/vim-devicons'
     Plugin 'sheerun/vim-polyglot'
 
-    " A light Vim plugin for previewing markdown files in a browser.
-    Plugin 'JamshedVesuna/vim-markdown-preview'
+    Plugin 'iamcco/markdown-preview.nvim'
     
 call vundle#end() " Plugins must be added before the following line.
+
+" Plug plugin manager
+if !filereadable(expand("~/.vim/autoload/plug.vim"))
+    :! curl -fLo ${HOME}/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+endif

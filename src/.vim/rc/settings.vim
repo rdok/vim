@@ -11,7 +11,7 @@ set undofile
 set noerrorbells visualbell t_vb=   
 
 " Use comma as Leader
-let mapleader = ','                 
+let mapleader = ' '                 
 
 " ctrlpvim/ctrlp.vim
 let g:ctrlp_map = '<c-p>'

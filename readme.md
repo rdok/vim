@@ -2,17 +2,14 @@
 
 ### Learning Chords
 
-| KeyStrokes                | Info                                      |
-| ------------------------- |:-----------------------------------------:|
-| [`{selected-chars}"+y`]   | Yank selected lines to system clipboard.  |
-| [`"+yy`]                  | Yank current line to system clipboard     |
-| [`:%+y`]                  | Yank entire file to system clipboard.     |
-| [`:{mode}unmap {key}`]    | Unset, or remove a mapping.               |
+| KeyStrokes                    | Info                                      | Usage                                             |
+| -------------------------     |:-----------------------------------------:|---------------------------------------------------|
+| `{register}y{motion}`         | Yank motion to register.                  | `"+yiw` Yank current word to system clipboard     |
+| `{visual}{register}y`         | Visual: yank selected chars to a register | `V"+y` Yank selected line(s) to system clipboard. |
+| `{register}yy`                | Yank current line to a register           | `"+yy` Yank current line to system clipboard      |
+| `:{range}y{register}`         | Yank range to register.                   | `:%y+` Yank entire file to system clipboard.      |
+| `:{mode}unmap {key}`          | Unset, or remove a mapping.               |
 
-
-[`"+yy`]: https://stackoverflow.com/a/11489440/2790481
-[`{selected-chars}"+y`]: https://stackoverflow.com/a/9166363/2790481
-[`:%+y`]: https://vi.stackexchange.com/a/96/12339
 
 ### Development
 ```

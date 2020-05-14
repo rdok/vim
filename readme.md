@@ -4,14 +4,15 @@
 
 | KeyStrokes                | Info                                      |
 | ------------------------- |:-----------------------------------------:|
-| [`+yy`]                   | Yank current link to system clipboard     |
-| [`<Shift-v>{motion}"+y`]  | Copy selected lines to system clipboard.  |
+| [`{selected-chars}"+y`]   | Yank selected lines to system clipboard.  |
+| [`"+yy`]                  | Yank current line to system clipboard     |
+| [`:%+y`]                  | Yank entire file to system clipboard.     |
 | [`:{mode}unmap {key}`]    | Unset, or remove a mapping.               |
 
 
-[`+yy`]: https://stackoverflow.com/a/11489440/2790481
-[`<Shift-v>{motion}"+y`]: https://stackoverflow.com/a/9166363/2790481
-[`:{mode}unmap {key}`]: https://stackoverflow.com/a/9166363/2790481
+[`"+yy`]: https://stackoverflow.com/a/11489440/2790481
+[`{selected-chars}"+y`]: https://stackoverflow.com/a/9166363/2790481
+[`:%+y`]: https://vi.stackexchange.com/a/96/12339
 
 ### Development
 ```

@@ -14,5 +14,8 @@ call vundle#begin()
     Plugin 'vim-scripts/vim-auto-save'
     Plugin 'ryanoasis/vim-devicons'
     Plugin 'sheerun/vim-polyglot'
+
+    " A light Vim plugin for previewing markdown files in a browser.
+    Plugin 'JamshedVesuna/vim-markdown-preview'
     
 call vundle#end() " Plugins must be added before the following line.

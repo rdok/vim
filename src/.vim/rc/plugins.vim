@@ -20,6 +20,17 @@ call vundle#begin()
 call vundle#end() " Plugins must be added before the following line.
 
 " Plug plugin manager
+let plug_installed = 0
 if !filereadable(expand("~/.vim/autoload/plug.vim"))
     :! curl -fLo ${HOME}/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    let plug_installed = 1
+endif
+
+call plug#begin('~/.vim/plugged')
+    Plug 'junegunn/vim-easy-align'
+call plug#end()
+
+" Plug plugin manager
+if plug_installed
+    :PlugInstall
 endif

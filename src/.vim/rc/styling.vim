@@ -8,8 +8,7 @@ set background=light
 " Light: summerfruit256, solarized, pyte, PaperColor, pencil
 " colo ondedark             " Use color scheme.
 
-" Display line numbers
-set number
+" Relative numbers require less keystrokes than absolute ones
 set relativenumber
 
 " Remove split borders

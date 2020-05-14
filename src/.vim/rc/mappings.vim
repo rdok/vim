@@ -1,24 +1,24 @@
 " Edit files
-nmap <Leader>sv :so $MYVIMRC<cr>        " Source Vimrc file
-nmap <Leader>q :q!<cr>
-nmap <Leader>w :w<cr>
-nmap <Leader>wq :wq<cr>
-nmap <Leader>bd :bd<cr>                 " Close current buffer
-nmap <Leader><SPACE> :nohl<cr>          " Stop the highlighting for the search 
+nnoremap <Leader>sv :so $MYVIMRC<cr>        " Source Vimrc file
+nnoremap <Leader>q :q!<cr>
+nnoremap <Leader>w :w<cr>
+nnoremap <Leader>wq :wq<cr>
+nnoremap <Leader>bd :bd<cr>                 " Close current buffer
+nnoremap <Leader><SPACE> :nohl<cr>          " Stop the highlighting for the search 
 
 " Tests
-nmap <F9> :!clear && ./phpunit %<cr>
-nmap <F10> :!clear && python %<cr>
+nnoremap <F9> :!clear && ./phpunit %<cr>
+nnoremap <F10> :!clear && python %<cr>
 nnoremap <f5> :!ctags -R --exclude=.git --exclude=node_modules<CR>
 
 " NERDTree: Toggle Sidebar
-nmap <Leader>1 :NERDTreeToggle<cr>
+nnoremap <Leader>1 :NERDTreeToggle<cr>
 
 " Switch between splits
-nmap <C-J> <C-W><C-J>
-nmap <C-K> <C-W><C-K>
-nmap <C-H> <C-W><C-H>
-nmap <C-L> <C-W><C-L>
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-H> <C-W><C-H>
+nnoremap <C-L> <C-W><C-L>
 
 " Store swap files and backup files to a proper location
 if !isdirectory($HOME . '/.vim/temp')

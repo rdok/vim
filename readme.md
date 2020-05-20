@@ -1,6 +1,6 @@
 # vim
 
-### Learning Chords
+### Chords
 
 | KeyStrokes                    | Info                                      | Usage                                             |
 | -------------------------     |:-----------------------------------------:|---------------------------------------------------|
@@ -8,8 +8,12 @@
 | `{visual}{register}y`         | Visual: yank selected chars to a register | `V"+y` Yank selected line(s) to system clipboard. |
 | `{register}yy`                | Yank current line to a register           | `"+yy` Yank current line to system clipboard      |
 | `:{range}y{register}`         | Yank range to register.                   | `:%y+` Yank entire file to system clipboard.      |
-| `:{mode}unmap {key}`          | Unset, or remove a mapping.               |
 
+#### Extra
+| KeyStrokes                    | Info                                      | Usage                                             |
+| -------------------------     |:-----------------------------------------:|---------------------------------------------------|
+| `:{mode}unmap {key}`          | Unset, or remove a mapping.               |                                                   |
+| `:%!jq .`                     | Format json                               | [Source](https://vi.stackexchange.com/a/19950/12339) | 
 
 ### Development
 ```

@@ -1,5 +1,6 @@
 " Edit files
 nnoremap <Leader>sv :so $MYVIMRC<cr>        " Source Vimrc file
+nnoremap <Leader>ev :vsplit $HOME/.vim/rc/mappings.vim<cr> " Add mappings
 nnoremap <Leader>q :q!<cr>
 nnoremap <Leader>w :w<cr>
 nnoremap <Leader>wq :wq<cr>

@@ -21,3 +21,4 @@ ln -s $(pwd)/src/.vim/ ${HOME}/.vim
 ln -s $(pwd)/src/.vimrc ${HOME}/.vimrc
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
+Ubuntu: Download a font, like [Ubuntu](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Ubuntu/Medium/complete/Ubuntu%20Medium%20Nerd%20Font%20Complete.ttf) to ~/.local/share/fonts 

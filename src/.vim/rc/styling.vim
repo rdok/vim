@@ -1,12 +1,8 @@
 " Switch on syntax highlighting.
 syntax on                       
 
-" light/dark
-set background=light             
-
-" Dark:  onedark, solarized
-" Light: summerfruit256, solarized, pyte, PaperColor, pencil
-" colo ondedark             " Use color scheme.
+set background=light
+colo seoul256-light
 
 " Relative numbers require less keystrokes than absolute ones
 set relativenumber

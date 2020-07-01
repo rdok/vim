@@ -10,8 +10,10 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-scripts/vim-auto-save'
     Plug 'ryanoasis/vim-devicons'
     Plug 'ctrlpvim/ctrlp.vim'  
-    Plug 'joshdick/onedark.vim'
     Plug 'sheerun/vim-polyglot'
+
+    Plug 'joshdick/onedark.vim'
+    Plug 'junegunn/seoul256.vim'
 
     Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 call plug#end()

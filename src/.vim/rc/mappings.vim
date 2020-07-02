@@ -10,7 +10,7 @@ nnoremap <Leader><SPACE> :nohl<cr>          " Stop the highlighting for the sear
 " Tests
 nnoremap <F9> :!clear && ./phpunit %<cr>
 nnoremap <F10> :!clear && python %<cr>
-nnoremap <f5> :!ctags -R --exclude=.git --exclude=node_modules<CR>
+nnoremap <f5> :!ctags -R --exclude=.git --languages=PHP --exclude=node_modules<CR>
 
 " NERDTree: Toggle Sidebar
 nnoremap <Leader>1 :NERDTreeToggle<cr>

@@ -15,6 +15,13 @@
 | `:{mode}unmap {key}`          | Unset, or remove a mapping.               |                                                   |
 | `:%!jq .`                     | Format json                               | [Source](https://vi.stackexchange.com/a/19950/12339) | 
 
+#### Search
+| KeyStrokes                    | Info                                      | Usage                                             |
+| -------------------------     |:-----------------------------------------:|---------------------------------------------------|
+| `:vim /{keyword}/g **`        | Search for all occurences, recursively.   |                                                   |
+| `:cnext`                      | Jump to next search result.               |                                                   | 
+
+
 ### Development
 ```
 ln -s $(pwd)/src/.vim/ ${HOME}/.vim

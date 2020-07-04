@@ -15,6 +15,8 @@
 | `:ls`                         | List all buffers.                         |                                                   | 
 | `:buffer {N}`                 | Jump to buffer by it's number/id          |                                                   | 
 
+### TODO
+- Auto generate blocks for: html, php E.g. <div></div>, functions, ets
 
 ### Development
 ```

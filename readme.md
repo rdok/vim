@@ -16,7 +16,7 @@
 | `:buffer {N}`                 | Jump to buffer by it's number/id          |                                                   | 
 
 ### TODO
-- Auto generate blocks for: html, php E.g. <div></div>, functions, ets
+- Auto generate blocks for: html, php.flask E.g. <div></div>, functions, ets
 
 ### Development
 ```

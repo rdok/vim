@@ -6,6 +6,7 @@ nnoremap <Leader>w :w<cr>
 nnoremap <Leader>wq :wq<cr>
 nnoremap <Leader>bd :bd<cr>                 " Close current buffer
 nnoremap <Leader><SPACE> :nohl<cr>          " Stop the highlighting for the search 
+nnoremap <Leader>e :edit!<cr> " Refresh buffer
 
 " Tests
 nnoremap <F9> :!clear && ./phpunit %<cr>

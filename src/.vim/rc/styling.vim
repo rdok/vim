@@ -20,8 +20,6 @@ set laststatus=2
 set encoding=utf-8 
 
 " Highlight the background in red for text that goes over the 81 column limit.
-highlight OverLength 
-match OverLength /\%81v.\+/
 set colorcolumn=81
 autocmd FileType html,markdown,json highlight OverLength ctermbg=NONE 
     \ ctermfg=NONE

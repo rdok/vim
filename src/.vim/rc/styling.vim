@@ -1,8 +1,9 @@
 " Switch on syntax highlighting.
 syntax on                       
 
-set background=light
-colo seoul256-light
+set background=dark
+" colo seoul256-light
+colo seoul256
 
 " Relative numbers require less keystrokes than absolute ones
 set relativenumber
